@@ -1,0 +1,134 @@
+#contentBackdrop {
+    margin-top:calc(calc(100vh + 50px) - 90px + 190px);
+    padding-top: 15px;
+    background:#00030b;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+
+.waver {
+    width:100vw;
+    height:400px;
+    user-select:none;
+    z-index:-1;
+}
+
+.flip {
+    margin:-70px 0 0 0;
+    transform:scale(-1,1);
+}
+
+.topFit {
+    position:absolute;
+    left:0;
+    top:calc(100vh - 160px);
+}
+
+#gradientAnim {
+    position:fixed;
+    top:0;
+    left:0;
+    object-fit: fill;
+    filter:blur(20px);
+    z-index:-200;
+}
+
+#logoAnim {
+    display:inline-block;
+}
+
+#lottieContainer {
+    display:flex;
+    align-items:center;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    width:100vw;
+    height:90vh; /*might be genius, might be stupid*/
+}
+
+#lottieContainer span {
+    display:block;
+    margin:-45px 0 0 0;
+    font-weight:300;
+    animation:1.7s subTextIn;
+}
+
+@keyframes subTextIn {
+    0%{opacity:0; transform:translate(0,10px)}
+    70%{opacity:0; transform:translate(0,10px)}
+    to{}
+} 
+
+#lottieContainerChild {
+    width:100vw;
+}
+
+#topVid {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    opacity:0.5;
+    height: 100vh;
+    z-index: -200;
+    object-fit: cover;
+    animation:1.2s vidIn cubic-bezier(.74,-0.01,.31,1)
+}
+
+@keyframes vidIn {
+    0% {transform:scale(0.9,0.9); border-radius:90px;}
+    10% {transform:scale(0.9,0.9); border-radius:90px;}
+    to{}
+}
+
+#navContainer2 { /*Custom home animation*/
+    animation:1.3s navIn cubic-bezier(.74,-0.01,.31,1)
+}
+
+@keyframes navIn {
+    0%{opacity:0; transform:translate(0,80px) scale(0.75,0.75)}
+    10%{opacity:0; transform:translate(0,80px) scale(0.75,0.75)}
+    to{}
+}
+
+#socialGrid {
+    display:inline-block;
+    margin:50px 0 0 -7px;
+}
+
+#social {
+    display:inline-block;
+    background-color:#2c3faa20;
+    padding:108px;
+    font-size:80px;
+    width:80px;
+    height:80px;
+    border-radius:25px;
+    margin:7px;
+    color:#59659c;
+}
+
+footer {
+    background-color: #00020a;
+    margin:-80px 0 0 0;
+}
+
+footer h2 {
+    transform:none;
+    width:100%;
+}
+
+footer a {
+    text-decoration: none;
+    font-size:24px;
+    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
+    color:#516583;
+    transition:0.2s;
+}
+
+footer a:hover {
+    color:#d6f0ff
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+  <title>wuulfy</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="/fonts/cabinet-grotesk.css" rel="stylesheet">
+  <link rel="preconnect" href="https://ka-f.fontawesome.com">
+  <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,800&amp;display=swap%22%" rel="stylesheet">-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <link rel="canonical" href="https://wuulfy.com">
+  <meta name="msapplication-TileColor" content="#00e587">
+  <meta name="msapplication-TileColor" content="#00e587">
+  <meta name="theme-color" content="#00e587"/>
+  <meta content="#00e587" name="msapplication-TileColor">
+  <meta content="#00e587" name="theme-color">
+  <meta name="keywords" content="motion,graphics,design,animation,programming,portfolio,ae,technology,html,css,symedia">
+  <meta name="description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
+  <meta property="og:locale" content="en">
+  <meta property="og:site_name" content="wuulfy // motion design">
+  <meta property="og:url" content="https://wuulfy.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="wuulfy // motion design">
+  <meta property="og:description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
+  <meta property="og:image" content="https://wuulfy.com/images/metaBanner.webp">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta itemprop="name" content="wuulfy // motion design">
+  <meta itemprop="description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
+  <meta itemprop="image" content="https://wuulfy.com/img/metaBanner.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://wuulfy.com/img/metaBanner.webp">
+  <meta name="twitter:creator" content="@wuulfydesign">
+  <meta name="twitter:site" content="https://wuulfy.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/3c6f6f5ebb.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="global.js"></script>
+  <script src="parallax.js"></script>
+</head>
+<body>
+    <div id="navContainer2">
+       <div id="leftArea">
+         <a href="index.html" class="active" id="logo"><img src="img/logo/logomark.svg" width=50px height=60px; alt="wuulfy logo"></a>
+       </div>
+       <div id="navContainer">
+          <div id="navBar">
+              <div id="navContent">
+                <a href="contact.html">contact</a>
+                <a href="about.html">about</a>
+                <a href="portfolio.html">portfolio</a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <img src="img/wave.webp" class="waver topFit">
+    <div id="contentBackdrop">
+      <div id="content">
+        <video id="topVid" width="100%" height="100%" loop="" autoplay="" muted="">
+          <source src="img/portfolio.mp4">
+          <!> Video failed to load!
+        </video>
+        <div id="lottieContainer">
+            <div id="lottieContainerChild">
+              <lottie-player id="logoAnim" src="img/logoAnimation.json" background="transparent"  speed="1"  style="width:325px; height:160px;" autoplay></lottie-player>
+              <span>motion graphics</span>
+          </div>
+        </div>
+       <h2>An eager graphic and motion designer from the UK. </h2>
+       <div id="boxes" class="box3x3">
+        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="shadeBox"></div>
+          <div id="boxContent">
+            <h1>The Fall</h1>
+            <span>Entry for ravie.co challenge #2 about freefall</span>
+          </div>
+        </a>
+        <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="shadeBox"></div>
+          <div id="boxContent">
+            <h1>Animated Loops</h1>
+            <span>A collection of mini animations I've made!</span>
+          </div>
+        </a>
+        <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="shadeBox"></div>
+          <div id="boxContent">
+            <h1>AuralSpace Concept</h1>
+            <span>Concept for a community streaming app</span>
+          </div>
+        </a>
+        <a href="#" id="btn">see more <i class="fas fa-play"></i></a>
+       </div>
+      </div>
+      <img src="img/wave2.webp" class="waver flip" style="margin-top:-30px;" alt="A wave-shaped separator.">
+      <div id="connect" style="background-color:#010714; background-image:radial-gradient(at center bottom, #160738, #010714 60%);">
+        <div id="content">
+          <h2>How about it? Let’s get this moving!</h2>
+          <p>Get in touch to work with me or simply chat via the following platforms</p>
+          <div id="socialGrid">
+            <a id="social">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a id="social">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a id="social">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a id="social">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <img src="img/wave.webp" class="waver" style="margin-top:-30px;" alt="A wave-shaped separator.">
+      </div>
+    </div>
+    <footer>
+      <div id="content">
+        <div id="subSection">
+          <h2>Find me</h2><br>
+          <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

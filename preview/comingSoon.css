@@ -1,0 +1,45 @@
+#logoAnim {
+    display:inline-block;
+}
+
+#lottieContainer {
+    display:flex;
+    align-items:center;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    width:100vw;
+    height:90vh; /*might be genius, might be stupid*/
+}
+
+#lottieContainer span {
+    display:block;
+    margin:-45px 0 0 0;
+    font-weight:300;
+    animation:1.7s subTextIn;
+}
+
+@keyframes subTextIn {
+    0%{opacity:0; transform:translate(0,10px)}
+    70%{opacity:0; transform:translate(0,10px)}
+    to{}
+} 
+
+#lottieContainerChild {
+    width:100vw;
+}
+
+span {
+    color:#d6f0ff;
+    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
+    font-size:21px;
+    font-weight:400;
+}
+
+body {
+    background-image: url(img/1080p.webp);
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+}
