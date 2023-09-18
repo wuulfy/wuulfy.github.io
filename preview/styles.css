@@ -11,19 +11,20 @@ html {
 }
   
 body {
-    background-color:#000;
+    background-color:#0a0318;
     background-attachment:fixed;
     background-position: center;
     margin:0;
-    padding-top:90px;
+    padding-top:20px;
     text-align:center;
     position:relative;
 }
 
 span {
-    color:#d6f0ff;
-    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
-    font-size:21px;
+    color:#f3fbff;
+    /*font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';*/
+    font-family:Satoshi;
+    font-size:20px;
     font-weight:400;
 }
 
@@ -31,7 +32,7 @@ p {
     float:left;
     width:100%;
     margin:0;
-    color:#d6f0ff;
+    color:#f3fbff;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     font-size:26px;
     font-weight:400;
@@ -39,28 +40,27 @@ p {
 
 h2 {
     float:left;
-    font-size:53px;
+    font-size:45px;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     font-weight:750;
     padding:0px 0px;
-    margin:0 0 20px 0;
-    color:#d6f0ff;
+    color:#f3fbff;
     transform:rotate(-1deg)
 }
 
 a {
-    color:#d6f0ff; /*I don't know why I needed to do this, it was some weird lilac colour it pulled out of it's ass*/
+    color:#f3fbff; /*I don't know why I needed to do this, it was some weird lilac colour it pulled out of it's ass*/
 }
 
 #btn {
     float:left;
-    color:#d6f0ff;
+    color:#f3fbff;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
-    font-size:24px;
+    font-size:20px;
     font-weight:500;
     border: 3px solid #7989b2;
     text-decoration:none;
-    padding:12px 26px;
+    padding:10px 20px;
     border-radius:200px;
     box-shadow: 0 5px 15px #00001155;
     transition:0.2s;
@@ -75,7 +75,7 @@ a {
 #btn:hover {
     background-color:#1a2029;
     border-color:#a7bcd3;
-    color:#d6f0ff;
+    color:#f3fbff;
     transform:scale(1.05,1.05);
 }
 
@@ -84,23 +84,31 @@ a {
     top:0;
     width:100%;
 	text-align:center;
-    transition:2.7s cubic-bezier(.6,0,.17,1);
-    animation:.7s navIn cubic-bezier(.4,0,.2,1);
+    transition:2s cubic-bezier(.6,0,.17,1);
     z-index:999;
-}
-
-@keyframes navIn {
-    from{opacity:0; transform:translate(0,30px) scale(0.9,0.9)}
-    to{}
 }
 
 #navContainer {
     display:inline-block;   
     min-width:200px;
-	width:1650px;
+	width:1440px;
     max-width:100%;
     text-align:right;
-    transition:0.7s cubic-bezier(.6,0,.17,1);
+    z-index:10500;
+    animation:.8s contentIn;
+    transition:0.5s cubic-bezier(.6,0,.17,1);
+}
+
+#navBlock {
+    top:0;
+    z-index:-1;
+    position:fixed;
+    background-color:#0a0317a0;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px #00000070;
+    width:100vw;
+    height:0px;
+    transition:0.5s cubic-bezier(.6,0,.17,1);
 }
 
 #navBar {
@@ -108,22 +116,18 @@ a {
     border-radius:60px;
     padding:0 6px 0 6px;
     text-align:right;
-    background-color:#000c1e70;
-    backdrop-filter: blur(25px);
-    box-shadow: 0px 10px 30px #00021160;
-    width:320px; /* WIDTH ELEMENT --- Hardcoded width is necessary for the animation to work. Stupid limitation of CSS.*/
-    margin:40px 40px 0 0;
-    transition:0.7s cubic-bezier(.6,0,.17,1);
+    margin:40px 60px 0 0;
+    transition:0.5s cubic-bezier(.6,0,.17,1);
 }
 
 #navContent a {
-    font-size:22px;
+    font-size:20px;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     font-weight:500;
-    color:#d6f0ff;
+    color:#f3fbff;
     text-decoration:none;
     float:right;
-    padding:17px 17px;
+    padding:14px 14px;
     margin:7px 1px;
     border-radius:70px;
     transition:0.2s
@@ -148,7 +152,7 @@ a {
     position:absolute;
     display:inline-block;
     z-index:99;
-    margin:40px 0px 0 50px;
+    margin:36px 0px 0 25px;
     transition:0.7s cubic-bezier(.6,0,.17,1);
 }
 
@@ -185,9 +189,15 @@ a {
     padding:0 4% 1% 2%;
 	display:inline-block;
 	min-width:200px;
-	width:1260px;
+	width:1440px;
 	max-width:96%;	
 	text-align:left;
+    animation:.8s contentIn
+}
+
+@keyframes contentIn {
+    from{opacity:0}
+    to{}
 }
 
 #connect {
@@ -210,69 +220,34 @@ a {
 
 #box {
     display:inline-block;
-    background-color:#06183f;
+    background-color:#0e0824;
     background-size:cover;
     background-position:center;
-    margin:.8%;
-    border-radius:20px;
+    margin:.3%;
+    border-radius:15px;
     text-align:left;
+    text-decoration: none;
     color:white;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     overflow:hidden;
-    transition:0.25s;
-}
-
-#box:hover {
-    transform:scale(1.05,1.05);
-}
-
-#box:hover #boxContent {
-    opacity:1;
-    padding:25px 0 0 30px;
-    transform:none;
-}
-
-#box:hover #boxContent span {
-    opacity:1;
-    margin:5px 0 0 0;
-}
-
-#box:hover video {
-    opacity:1;
-}
-
-#box:hover #shadeBox {
-    opacity:1;
-}
-
-#shadeBox {
-    float:left;
-    object-fit: fill;
-    width:100%;
-    margin-bottom:-100%;
-    aspect-ratio : 6 / 5;
-    opacity:0;
-    background:#00000077;
-    transition: 0.25s;
+    transition:0.3s cubic-bezier(.4,0,.1,1.4);
 }
 
 #boxContent {
     float:left;
-    opacity:0;
     padding:25px 0 0px 30px;
-    transform:translate(0,25px);
-    transition:0.25s cubic-bezier(.4,0,.1,1.4);
 }
 
 #boxContent span {
     display:inline-block;
-    margin:30px 0 0 0;
-    transition:0.25s cubic-bezier(.4,0,.1,1.4);
-    transition-delay:0.1s;
+    transform:translate(-20px,0);
+    transition:0.3s cubic-bezier(.4,0,.1,1.4);
+    transition-delay:0s;
     opacity:0;
+    color:#c7ced1;
     padding-right:20px;
-    font-size:18px;
-    font-weight:400;
+    font-size:16px;
+    font-weight:500;
 }
 
 #box video {
@@ -280,21 +255,56 @@ a {
     float:left;
     width:100%;
     margin-bottom:-100%;
-    aspect-ratio : 6 / 5;
+    aspect-ratio : 4 / 2.8;
     opacity:0;
-    transition: 0.25s;
-}
-
-#box {
-    text-decoration: none
+    transition: 0.4s;
+    background-color:#0c0f23;
 }
 
 .box3x3 #box {
-    width:31.5%;
-    aspect-ratio : 6 / 5; /*For better or for worse forces height to be size-equiv for ez scaling*/
+    width:32%;
+    aspect-ratio : 4 / 2.8; /*For better or for worse forces height to be size-equiv for ez scaling*/
 }
 
 #box h1 {
+    transform:translate(-20px,0);
     margin:0;
-    font-size:28px;
+    opacity:0;
+    font-size:24px;
+    font-weight:600;
+    font-family:satoshi;
+    transition:0.3s cubic-bezier(.4,0,.1,1.4);
+}
+
+#box:hover {
+    transform:scale(1.02,1.02)
+}
+
+#box:hover #boxContent span {
+    opacity:1;
+    transform:translate(0,0);
+    transition-delay:0.07s;
+}
+
+#box:hover #boxContent h1 {
+    opacity:1;
+    transform:translate(0,0);
+}
+
+#box:hover video {
+    opacity:1;
+}
+
+.banner {
+    aspect-ratio : 10 / 2.3 !important;
+    width: 98% !important;
+}
+
+.banner:hover {
+    transform:none !important;
+}
+
+.banner video {
+    aspect-ratio : 10 / 2.3 !important;
+    opacity: 1 !important
 }

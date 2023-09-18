@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
-  <title>wuulfy</title>
+  <title>wuulfy ― motion design</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <link href="/fonts/cabinet-grotesk.css" rel="stylesheet">
+  <link href="/fonts/satoshi.css" rel="stylesheet">
   <link rel="preconnect" href="https://ka-f.fontawesome.com">
   <!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
   <!--<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,800&amp;display=swap%22%" rel="stylesheet">-->
@@ -42,6 +43,7 @@
 </head>
 <body>
     <div id="navContainer2">
+      <div id="navBlock"></div>
        <div id="leftArea">
          <a href="index.html" class="active" id="logo"><img src="img/logo/logomark.svg" width=50px height=60px; alt="wuulfy logo"></a>
        </div>
@@ -55,49 +57,69 @@
           </div>
       </div>
     </div>
-    <img src="img/wave.webp" class="waver topFit">
     <div id="contentBackdrop">
       <div id="content">
-        <video id="topVid" width="100%" height="100%" loop="" autoplay="" muted="">
-          <source src="img/portfolio.mp4">
-          <!> Video failed to load!
-        </video>
-        <div id="lottieContainer">
-            <div id="lottieContainerChild">
-              <lottie-player id="logoAnim" src="img/logoAnimation.json" background="transparent"  speed="1"  style="width:325px; height:160px;" autoplay></lottie-player>
-              <span>motion graphics</span>
-          </div>
-        </div>
-       <h2>An eager graphic and motion designer from the UK. </h2>
        <div id="boxes" class="box3x3">
+        <a id="box" class="banner" href="#">
+          <video muted loop autoplay>
+            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="boxContent">
+            <h1>2023 Showreel</h1>
+          </div>
+        </a>
         <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
           <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
             <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
           </video>
-          <div id="shadeBox"></div>
           <div id="boxContent">
             <h1>The Fall</h1>
-            <span>Entry for ravie.co challenge #2 about freefall</span>
+            <span>June 2023</span>
           </div>
         </a>
         <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
           <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
             <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
           </video>
-          <div id="shadeBox"></div>
           <div id="boxContent">
             <h1>Animated Loops</h1>
-            <span>A collection of mini animations I've made!</span>
+            <span>June 2023</span>
           </div>
         </a>
         <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
           <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
             <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
           </video>
-          <div id="shadeBox"></div>
           <div id="boxContent">
             <h1>AuralSpace Concept</h1>
-            <span>Concept for a community streaming app</span>
+            <span>June 2023</span>
+          </div>
+        </a>
+        <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="boxContent">
+            <h1>AuralSpace Concept</h1>
+            <span>June 2023</span>
+          </div>
+        </a>
+        <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="boxContent">
+            <h1>AuralSpace Concept</h1>
+            <span>June 2023</span>
+          </div>
+        </a>
+        <a id="box" href="#" style="background-image:url(img/gradientAnimated_00124.png)"> <!--THUMBNAIL-->
+          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+          </video>
+          <div id="boxContent">
+            <h1>AuralSpace Concept</h1>
+            <span>June 2023</span>
           </div>
         </a>
         <a href="#" id="btn">see more <i class="fas fa-play"></i></a>
