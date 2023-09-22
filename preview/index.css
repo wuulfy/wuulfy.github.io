@@ -1,8 +1,8 @@
 .waver {
     width:100vw;
-    height:400px;
+    height:300px;
     user-select:none;
-    z-index:-1;
+    z-index:-122;
 }
 
 .flip {
@@ -23,41 +23,95 @@
     width:100vw;
 }
 
-#socialGrid {
-    display:inline-block;
-    margin:50px 0 0 -7px;
+#socialArray {
+    margin:50px 0 0 0;
 }
 
 #social {
     display:inline-block;
-    background-color:#2c3faa20;
-    padding:108px;
-    font-size:80px;
-    width:80px;
-    height:80px;
-    border-radius:25px;
-    margin:7px;
-    color:#59659c;
-}
-
-footer {
-    background-color: #00020a;
-    margin:-80px 0 0 0;
-}
-
-footer h2 {
-    transform:none;
-    width:100%;
-}
-
-footer a {
     text-decoration: none;
-    font-size:24px;
-    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
-    color:#516583;
-    transition:0.2s;
+    font-size:22px; 
+    color:#d5c1df;
+    transition:0.25s;
+    padding:8px;
+    margin:0 2px 0 2px;
+    aspect-ratio: 1 / 1;
+    width:32px;
+    border-radius:5px;
+    background-color: #3b1e53;
+    text-align: center;
 }
 
-footer a:hover {
-    color:#d6f0ff
+#social i {
+    transform: translate(0,3px);
+}
+
+#social:hover {
+    color:#0f0527;
+    background-color: #29e98d;
+    transform:scale(1.03,1.03);
+}
+
+#topGrad {
+    position:fixed;
+    top:0;
+    z-index:-90;
+    width:100vw;
+    height:120vh;
+    background-image:radial-gradient(at top right,#072b32 0%,#08011600 50%);
+}
+
+#nestBox:hover div span {
+    opacity:0;
+    transform:translate(0,-7px);
+}
+
+#nestBox:hover div h3 {
+    opacity:0 !important;
+    transform:translate(0,-10px)
+}
+
+#nestBox {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    min-width:200px;
+	width:1600px;
+    max-width:100%;
+    transform:translate(-1%,-4px);
+    aspect-ratio: 10.3 / 2.3 !important;
+    text-align:center;
+}
+
+#nestBox * {
+    transition:0.35s cubic-bezier(.4,0,.1,1.4);
+}
+
+#nestBox h3 {
+    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
+    font-size:32px;
+    margin:0;
+    opacity:1;
+    padding: 3% 0 5px;
+}
+
+#nestBox span {
+    display:inline-block;
+    font-size:18px;
+    color:#fff1ffcc
+}
+
+#showPiece {
+    position:absolute;
+    opacity:0 !important;
+    font-size: 36px !important;
+    line-height: 0;
+    transform:translate(7px, -62px)
+}
+
+#nestBox:hover #showPiece {
+    opacity:1 !important;
+    transform:translate(7px, -74px)
 }

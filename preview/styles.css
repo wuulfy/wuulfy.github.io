@@ -12,6 +12,7 @@ html {
   
 body {
     background-color:#0a0318;
+    background-image:radial-gradient(at top left,#3d124d 0%,#080116 50%);
     background-attachment:fixed;
     background-position: center;
     margin:0;
@@ -22,7 +23,6 @@ body {
 
 span {
     color:#f3fbff;
-    /*font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';*/
     font-family:Satoshi;
     font-size:20px;
     font-weight:400;
@@ -33,17 +33,17 @@ p {
     width:100%;
     margin:0;
     color:#f3fbff;
-    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
-    font-size:26px;
+    font-family:'Satoshi', 'Arial';
+    font-size:19px;
     font-weight:400;
 }
 
 h2 {
-    float:left;
-    font-size:45px;
+    font-size:36px;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
-    font-weight:750;
+    font-weight:700;
     padding:0px 0px;
+    margin-bottom:15px;
     color:#f3fbff;
     transform:rotate(-1deg)
 }
@@ -52,31 +52,105 @@ a {
     color:#f3fbff; /*I don't know why I needed to do this, it was some weird lilac colour it pulled out of it's ass*/
 }
 
+a:hover {
+    color:#29e98d
+}
+
+footer {
+    display: inline-block;
+    background-color: #00020a;
+    width:100%;
+    padding: 0 0 16px 0;
+}
+
+footer #content {
+    min-width:200px;
+	width:1280px;
+	max-width:96%;
+}
+
+footer h2 {
+    margin:0 0 -10px 12px;
+    transform:none;
+    width:100%;
+    font-size:30px;
+}
+
+#subSection a {
+    display: inline-block;
+    text-decoration: none;
+    font-size:18px;
+    line-height:40px;
+    border-radius:200px;
+    width:108%;
+    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
+    color:#929cac;
+    vertical-align: middle;
+    padding: 0 0 0 15px;
+    transition:0.15s;
+}
+
+#subSection a:hover {
+    color:#29e98d;
+    background:#c3ecff10;
+}
+
+#subSection i {
+    font-size:16px;
+    margin:0 3px 0 0;
+}
+
+footer a:hover {
+    color:#d6f0ff
+}
+
+footer span {
+    display:inline-block;
+    font-size:16px;
+    margin:7px 0 0 16px;
+    color: #d8dde6;
+}
+
+#subSection {
+    vertical-align: top;
+    text-align:left;
+    display: inline-block;
+    margin:0 20px;
+	width:calc(30% - 40px);
+}
+
 #btn {
     float:left;
     color:#f3fbff;
-    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
-    font-size:20px;
+    font-family:'Satoshi', 'Arial';
+    font-size:16px;
     font-weight:500;
-    border: 3px solid #7989b2;
+    border: 2px solid #c9c1d6;
     text-decoration:none;
-    padding:10px 20px;
+    padding:10px 20px 10px;
     border-radius:200px;
     box-shadow: 0 5px 15px #00001155;
     transition:0.2s;
 }
 
 #btn i {
-    font-size:8px;
-    margin:0 0 0 5px;
-    transform:translate(0,-3px);
+    font-size:7px;
+    line-height:0;
+    margin:0 0 0 4px;
+    transform:translate(0,-2px);
 }
 
 #btn:hover {
     background-color:#1a2029;
-    border-color:#a7bcd3;
-    color:#f3fbff;
+    border-color:#29e98d;
+    color:black;
+    background-color:#29e98d;
     transform:scale(1.05,1.05);
+}
+
+#btn:active {
+    transition: .3s cubic-bezier(.3,0,.01,3);
+    transform: scale(.9,.9);
 }
 
 #navContainer2 { /*Basically handles containing the navigation in the horizontal width area.*/
@@ -91,11 +165,10 @@ a {
 #navContainer {
     display:inline-block;   
     min-width:200px;
-	width:1440px;
+	width:1600px;
     max-width:100%;
     text-align:right;
     z-index:10500;
-    animation:.8s contentIn;
     transition:0.5s cubic-bezier(.6,0,.17,1);
 }
 
@@ -103,11 +176,12 @@ a {
     top:0;
     z-index:-1;
     position:fixed;
-    background-color:#0a0317a0;
+    background-color:#02010870;
     backdrop-filter:blur(10px);
-    box-shadow:0 10px 30px #00000070;
-    width:100vw;
+    box-shadow:0 10px 30px #00000060;
+    width:100%;
     height:0px;
+    border-radius: 0 0 30px 30px;
     transition:0.5s cubic-bezier(.6,0,.17,1);
 }
 
@@ -116,20 +190,20 @@ a {
     border-radius:60px;
     padding:0 6px 0 6px;
     text-align:right;
-    margin:40px 60px 0 0;
+    margin:30px 50px 0 0;
     transition:0.5s cubic-bezier(.6,0,.17,1);
 }
 
 #navContent a {
-    font-size:20px;
+    font-size:17px;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     font-weight:500;
-    color:#f3fbff;
+    color:#b0a4c5;
     text-decoration:none;
     float:right;
-    padding:14px 14px;
-    margin:7px 1px;
-    border-radius:70px;
+    padding:12px 17px;
+    margin:10px 0 ;
+    border-radius:100px;
     transition:0.2s
 }
 
@@ -189,9 +263,9 @@ a {
     padding:0 4% 1% 2%;
 	display:inline-block;
 	min-width:200px;
-	width:1440px;
+	width:1600px;
 	max-width:96%;	
-	text-align:left;
+	text-align:center;
     animation:.8s contentIn
 }
 
@@ -200,16 +274,23 @@ a {
     to{}
 }
 
+
 #connect {
-    margin-top:-85px;
+    margin-top:-50px;
 }
 
-/*.active {
-}*/
+#connect #content h2 {
+    display: inline-block;
+    margin-top:-30px !important;
+}
+
+#ACTIVE {
+    color:white !important;
+}
 
 #boxes {
     text-align:center;
-    margin:125px 0 0 0
+    margin:100px 0 0 0
 }
 
 #boxes #btn {
@@ -246,7 +327,7 @@ a {
     opacity:0;
     color:#c7ced1;
     padding-right:20px;
-    font-size:16px;
+    font-size:15px;
     font-weight:500;
 }
 
@@ -270,7 +351,8 @@ a {
     transform:translate(-20px,0);
     margin:0;
     opacity:0;
-    font-size:24px;
+    font-size:22px;
+    padding-bottom:7px;
     font-weight:600;
     font-family:satoshi;
     transition:0.3s cubic-bezier(.4,0,.1,1.4);
@@ -307,4 +389,107 @@ a {
 .banner video {
     aspect-ratio : 10 / 2.3 !important;
     opacity: 1 !important
+}
+
+#mobileButtonContainer {
+    position:fixed;
+    bottom:20px;
+    z-index:99;
+    width:100%;
+    text-align:center;
+}
+
+#mobileButton i {
+    font-size:22px;
+    background-color: #0a031dbb;
+    box-shadow: 0 0 20px #ffffff20;
+    aspect-ratio: 1 / 1;
+    padding:30px;
+    width:22px;
+    border-radius:200px;
+    cursor:pointer;
+}
+
+#mobileUI {
+    position:fixed;
+    display:none;
+    background-color:#0d081b;
+    padding:15px 0;
+    margin:15px 0;
+    width:94%;
+    margin-left:3%;
+    bottom:0;
+    z-index:90;
+    text-align: center;
+    border-radius:30px;
+    animation: 0.4s navIn cubic-bezier(.33,0,0,1);
+}
+
+@keyframes navIn {
+    from{transform:translate(0,50px); opacity:0}
+    to{}
+}
+
+#mobileUI a {
+    display:inline-block;
+    width:43%;
+    margin:1.5% .75%;
+    font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
+    text-decoration: none;
+    font-size:1.1rem;
+    border-radius:200px;
+    padding:15px 0;
+    background-color:#1d142c;
+    color:#e2d8ec;
+}
+
+#mobileUI #ACTIVE {
+    background-color:#261935;
+}
+
+#mobileUI span {
+    position:absolute;
+    font-size:1rem;
+    width:100%;
+    left:0;
+    top:-50px;
+    text-align: center;
+    opacity:0.4;
+    user-select: none;
+}
+
+#closeRegion {
+    display:none;
+    position:fixed;
+    top:0;
+    z-index:50;
+    width:100%;
+    height:100%;
+    backdrop-filter: blur(12px);
+    background-color: #10082b99;
+    background-image:radial-gradient(at top, #072b3299 30%,#18082b99);
+    animation:.3s closeIn cubic-bezier(.33,0,0,1);
+}
+
+@keyframes closeIn {
+    from{opacity:0}
+    to{}
+}
+
+@media (orientation: landscape) {
+
+    #mobileUI, #closeRegion, #mobileButton {
+        display:none !important;
+    }
+
+}
+
+@media (orientation: portrait) {
+    #navContainer2 {
+        display:none;
+    }
+
+    #boxes {
+        margin:0;
+    }
 }
