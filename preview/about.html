@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
-  <title>wuulfy // about</title>
+  <title>wuulfy ›› Motion Design</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="about.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!--<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,600,800&amp;display=swap%22%" rel="stylesheet">-->
   <link href="/fonts/cabinet-grotesk.css" rel="stylesheet">
+  <link href="/fonts/satoshi.css" rel="stylesheet">
+  <link rel="preconnect" href="https://ka-f.fontawesome.com">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="shortcut icon" href="/img/favicon.ico">
   <link rel="canonical" href="https://wuulfy.com">
-  <meta name="msapplication-TileColor" content="#00e587">
-  <meta name="msapplication-TileColor" content="#00e587">
-  <meta name="theme-color" content="#00e587">
-  <meta content="#00e587" name="msapplication-TileColor">
-  <meta content="#00e587" name="theme-color">
+  <meta name="msapplication-TileColor" content="#29e98d">
+  <meta name="msapplication-TileColor" content="#29e98d">
+  <meta name="theme-color" content="#29e98d"/>
+  <meta content="#29e98d" name="msapplication-TileColor">
+  <meta content="#29e98d" name="theme-color">
   <meta name="keywords" content="motion,graphics,design,animation,programming,portfolio,ae,technology,html,css,symedia">
   <meta name="description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
   <meta property="og:locale" content="en">
@@ -31,39 +31,92 @@
   <meta itemprop="image" content="https://wuulfy.com/img/metaBanner.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://wuulfy.com/img/metaBanner.webp">
-  <meta name="twitter:creator" content="@0wuulfy">
+  <meta name="twitter:creator" content="@wuulfydesign">
   <meta name="twitter:site" content="https://wuulfy.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="minimum-scale=1"/>
   <script src="https://kit.fontawesome.com/3c6f6f5ebb.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="global.js"></script>
   <script src="parallax.js"></script>
 </head>
 <body>
+    <div id="topGrad"></div>
     <div id="navContainer2">
+      <div id="navBlock"></div>
        <div id="leftArea">
-         <a href="index.html" class="active" id="logo"><img src="img/logo/logomark.svg" width=60px height=60px; alt="wuulfy logo"></a>
-         <div id="breadCrumbs">
-           <a href="index.html">home</a>
-           <span><i class="fas fa-chevron-right"></i></span>
-           <a href="about.html">about</a>
-         </div>
+         <a href="index.html" class="active" id="logo"><img src="img/logo/logomark.svg" height=30px; alt="wuulfy logo"></a>
        </div>
        <div id="navContainer">
           <div id="navBar">
               <div id="navContent">
-                <a href="contact.html">contact</a>
-                <a href="about.html">about</a>
-                <a href="portfolio.html">portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a id="ACTIVE" href="about.html">About</a>
+                <!--<a href="reel.html">Store</a>-->
+                <a href="blog.html">Blog</a>
+                <a href="index.html">Work</a>
               </div>
           </div>
       </div>
     </div>
-    <div id="content">
-      <h2>About Me</h2>
-      <p class="xl">My mission is to</p>
+    <div id="mobileButtonContainer">
+      <a id="mobileButton" onclick="mobileOpen()"><i class="fas fa-bars"></i></a>
     </div>
-    <footer>  
+    <div id="closeRegion" onclick="mobileClose()"></div>
+    <div id="mobileUI">
+      <span onclick="mobileClose()">Tap here to close</span>
+      <a href="index.html">Work</a>
+      <a href="blog.html">Blog</a>
+      <a id="ACTIVE" href="about.html">About</a> 
+      <a href="contact.html">Contact</a>
+    </div>
+    <div id="contentBackdrop">
+      <div id="content">
+        <div id="aboutContainer">
+          <div id="aboutContainer2">
+            <h2>Hiya, I'm Tyler! 👋</h2>
+            <p>I'm a freelance graphic and motion designer from the North-East area of England.<br><br>I'm constantly striving to become better and better at what I do to make beautiful, yet functional art. From 3D to 2D, from advertising to telling stories, I'm here if you need to confide in me. If you're interested, please do reach out for queries, commissions or anything else.<br><br>When I'm not busy designing, I like to go out with friends, act like I'm a metal vocalist and game.</p>
+          </div>
+          </div>
+        <div id="imageTileOn">
+          <h2 id="toLeft">My design journey began back in 2017 when...</h2>
+          <p id="toLeft">I took on an interest in design for the very first time. I was a 10-11 year old and wanted to try and make a GFX profile picture for a game I really liked. I found a paintdotnet tutorial and did exactly that. It... wasn't good and wasn't a particularly impressive tutorial either but I enjoyed it.<br><br> In 2018, I wanted to create a YouTube channel and tried making my own animated intro at the start. I used a free webapp called Panzoid before using After Effects later that year. This was also something I enjoyed doing and dedicated myself to it. I've broadened my horizons from there to advertising, branding work and more <b>and I'm not going to stop</b>.</p>
+          <img src="img/thumbnails/theFall.webp" width="400px" height="400px">
+        </div>
+      </div>
+      <img src="img/wave2.webp" class="waver flip" style="margin-top:-33px;" alt="A wave-shaped separator.">
+      <div id="connect" style="background-color:#010714; background-image:radial-gradient(at center bottom, #421d5c, #100627 60%);">
+        <div id="content" style="transform:translate(0, -100px)">
+          <h2>Thank you for taking a look!</h2>
+          <p>If you'd like to make something awesome or chat, you can say <a href="mailto:hi@wuulfy.com">hi@wuulfy.com</a>.</p>
+          <div id="socialArray">
+            <a href="https://www.youtube.com/@wuulfy" target=”_blank” id="social"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/wuulfydesign" target=”_blank” id="social"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/wuulfydesign/" target=”_blank” id="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/tyler-miller-662ab5290/" target=”_blank” id="social"><i class="fab fa-vimeo"></i></a>
+            <a href="https://www.behance.net/wuulfy" target=”blank” id="social"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/tyler-miller-662ab5290/" target=”_blank” id="social"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:hi@wuulfy.com" target=”blank” id="social"><i class="fas fa-envelope"></i></a>
+            <!--<a href="#" id="social"><i class="fab fa-discord"></i></a>-->
+          </div>
+        </div>
+        <img src="img/wave.webp" class="waver" style="margin:-110px 0 -30px 0" alt="A wave-shaped separator.">
+      </div>
+    </div>
+    <footer>
+      <div id="content">
+        <div id="subSection" class="footerSocials">
+          <h2>Other Pages</h2><br>
+          <a href="#">Free Design Assets</a>
+          <!--<a href="#">Join The Community</a>-->
+          <span>© 2023 wuulfy</span>
+        </div>
+        <div id="subSection">
+          <a href="#">Testimonials</a>
+          <a href="#">Brand Guidelines</a>
+          <a href="#">Changelog</a>
+        </div>
+      </div>
     </footer>
 </body>
 </html>

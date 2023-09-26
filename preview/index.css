@@ -1,64 +1,5 @@
-.waver {
-    width:100vw;
-    height:300px;
-    user-select:none;
-    z-index:-122;
-}
-
-.flip {
-    margin:-70px 0 0 0;
-    transform:scale(-1,1);
-}
-
-#gradientAnim {
-    position:fixed;
-    top:0;
-    left:0;
-    object-fit: fill;
-    filter:blur(20px);
-    z-index:-200;
-}
-
 #lottieContainerChild {
     width:100vw;
-}
-
-#socialArray {
-    margin:50px 0 0 0;
-}
-
-#social {
-    display:inline-block;
-    text-decoration: none;
-    font-size:22px; 
-    color:#d5c1df;
-    transition:0.25s;
-    padding:8px;
-    margin:0 2px 0 2px;
-    aspect-ratio: 1 / 1;
-    width:32px;
-    border-radius:5px;
-    background-color: #3b1e53;
-    text-align: center;
-}
-
-#social i {
-    transform: translate(0,3px);
-}
-
-#social:hover {
-    color:#0f0527;
-    background-color: #29e98d;
-    transform:scale(1.03,1.03);
-}
-
-#topGrad {
-    position:fixed;
-    top:0;
-    z-index:-90;
-    width:100vw;
-    height:120vh;
-    background-image:radial-gradient(at top right,#072b32 0%,#08011600 50%);
 }
 
 #nestBox:hover div span {
@@ -78,7 +19,7 @@
     justify-content: center;
     -webkit-align-items: center;
     min-width:200px;
-	width:1600px;
+	width:1450px;
     max-width:100%;
     transform:translate(-1%,-4px);
     aspect-ratio: 10.3 / 2.3 !important;
@@ -99,7 +40,7 @@
 
 #nestBox span {
     display:inline-block;
-    font-size:18px;
+    font-size:16px;
     color:#fff1ffcc
 }
 

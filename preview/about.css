@@ -1,0 +1,42 @@
+body {
+    padding-top:100vh;
+}
+
+#aboutContainer {
+    position:absolute;
+    display:flex;
+    left:0;
+    top:0;
+    width:100%;
+    height:calc(100vh - 50px);
+    align-items: center; 
+    justify-content: center;
+    text-align:center;
+    z-index: 99;
+}
+
+#aboutContainer2 {
+    display:inline-block;
+    width:800px;
+    text-align: left;
+}
+
+#toLeft {
+    float:left;
+    text-align: left;
+    width:60%;
+}
+
+#toRight {
+    float:right;
+    text-align: right;
+    width:60%;
+}
+
+#imageTileOn img {
+    vertical-align: middle;
+    float:left;
+    width:calc(40% - 40px);
+    margin:-100px 0 0 40px;
+    border-radius: 15px;
+}

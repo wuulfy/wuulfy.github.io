@@ -1,5 +1,5 @@
 ::selection {
-    background: #01cf92;
+    background: #29e98d;
     color: black;
 }
   
@@ -12,7 +12,7 @@ html {
   
 body {
     background-color:#0a0318;
-    background-image:radial-gradient(at top left,#3d124d 0%,#080116 50%);
+    background-image:radial-gradient(at top right,#390e4b 0%,#0A0322 55%);
     background-attachment:fixed;
     background-position: center;
     margin:0;
@@ -21,8 +21,17 @@ body {
     position:relative;
 }
 
+#topGrad {
+    position:absolute;
+    top:0;
+    z-index:-90;
+    width:100vw;
+    height:120vh;
+    background-image:radial-gradient(at top left,#072d30 0%,#0A032200 55%);
+}
+
 span {
-    color:#f3fbff;
+    color:#fcf0ff;
     font-family:Satoshi;
     font-size:20px;
     font-weight:400;
@@ -32,24 +41,24 @@ p {
     float:left;
     width:100%;
     margin:0;
-    color:#f3fbff;
+    color:#fae7ff;
     font-family:'Satoshi', 'Arial';
     font-size:19px;
     font-weight:400;
 }
 
 h2 {
-    font-size:36px;
+    font-size:42px;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     font-weight:700;
-    padding:0px 0px;
+    padding:10px 0px;
     margin-bottom:15px;
-    color:#f3fbff;
+    color:#fef3ff;
     transform:rotate(-1deg)
 }
 
 a {
-    color:#f3fbff; /*I don't know why I needed to do this, it was some weird lilac colour it pulled out of it's ass*/
+    color:#fef3ff;
 }
 
 a:hover {
@@ -82,22 +91,23 @@ footer h2 {
     font-size:18px;
     line-height:40px;
     border-radius:200px;
-    width:108%;
+    width:105%;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     color:#929cac;
+    border: #c3ecff00 1px solid;
     vertical-align: middle;
     padding: 0 0 0 15px;
     transition:0.15s;
 }
 
 #subSection a:hover {
-    color:#29e98d;
-    background:#c3ecff10;
+    border: #d3c3ff40 1px solid;
+    background:#cd90ff10;
+    color:white;
 }
 
 #subSection i {
     font-size:16px;
-    margin:0 3px 0 0;
 }
 
 footer a:hover {
@@ -108,7 +118,49 @@ footer span {
     display:inline-block;
     font-size:16px;
     margin:7px 0 0 16px;
-    color: #d8dde6;
+}
+
+#socialArray {
+    margin:50px 0 0 0;
+}
+
+#social {
+    display:inline-block;
+    text-decoration: none;
+    font-size:20px; 
+    border:1px #543A69 solid;
+    color:#d5c1df;
+    transition:0.25s;
+    padding:8px;
+    margin:0 2px 0 2px;
+    aspect-ratio: 1 / 1;
+    width:28px;
+    border-radius:7px;
+    background-color: #3b1e53;
+    text-align: center;
+}
+
+#social i {
+    transform: translate(0,4px);
+}
+
+#social:hover {
+    color:#0f0527;
+    background-color: #29e98d;
+    border:1px #29e98d solid;
+    transform:scale(1.03,1.03);
+}
+
+.waver {
+    width:100vw;
+    height:300px;
+    user-select:none;
+    z-index:-122;
+}
+
+.flip {
+    margin:-70px 0 0 0;
+    transform:scale(-1,1);
 }
 
 #subSection {
@@ -125,11 +177,12 @@ footer span {
     font-family:'Satoshi', 'Arial';
     font-size:16px;
     font-weight:500;
-    border: 2px solid #c9c1d6;
+    border: 1px solid #dbb1ff45;
     text-decoration:none;
     padding:10px 20px 10px;
     border-radius:200px;
     box-shadow: 0 5px 15px #00001155;
+    background-color:#de89ff30;
     transition:0.2s;
 }
 
@@ -141,10 +194,10 @@ footer span {
 }
 
 #btn:hover {
-    background-color:#1a2029;
     border-color:#29e98d;
-    color:black;
     background-color:#29e98d;
+    border: 1px solid #29e98d;
+    color:black;
     transform:scale(1.05,1.05);
 }
 
@@ -165,7 +218,7 @@ footer span {
 #navContainer {
     display:inline-block;   
     min-width:200px;
-	width:1600px;
+	width:1450px;
     max-width:100%;
     text-align:right;
     z-index:10500;
@@ -176,12 +229,12 @@ footer span {
     top:0;
     z-index:-1;
     position:fixed;
-    background-color:#02010870;
-    backdrop-filter:blur(10px);
-    box-shadow:0 10px 30px #00000060;
+    background-color:#02010890;
+    backdrop-filter:blur(15px);
+    box-shadow:0 10px 30px #00000090;
     width:100%;
     height:0px;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 40px 40px;
     transition:0.5s cubic-bezier(.6,0,.17,1);
 }
 
@@ -195,13 +248,14 @@ footer span {
 }
 
 #navContent a {
-    font-size:17px;
+    font-size:16px;
     font-family:'Cabinet Grotesk', 'CabinetGrotesk-Variable', 'Arial';
     font-weight:500;
     color:#b0a4c5;
     text-decoration:none;
     float:right;
-    padding:12px 17px;
+    padding:10px 18px;
+    border:1px solid #ffffff00;
     margin:10px 0 ;
     border-radius:100px;
     transition:0.2s
@@ -210,6 +264,7 @@ footer span {
 #navContent a:hover {
     color:white;
     background-color:#cde7ff10;
+    border:1px solid #ffffff20;
 }
 
 #logo {
@@ -226,7 +281,7 @@ footer span {
     position:absolute;
     display:inline-block;
     z-index:99;
-    margin:36px 0px 0 25px;
+    margin:38px 0px 0 25px;
     transition:0.7s cubic-bezier(.6,0,.17,1);
 }
 
@@ -263,7 +318,7 @@ footer span {
     padding:0 4% 1% 2%;
 	display:inline-block;
 	min-width:200px;
-	width:1600px;
+	width:1450px;
 	max-width:96%;	
 	text-align:center;
     animation:.8s contentIn
@@ -325,7 +380,6 @@ footer span {
     transition:0.3s cubic-bezier(.4,0,.1,1.4);
     transition-delay:0s;
     opacity:0;
-    color:#c7ced1;
     padding-right:20px;
     font-size:15px;
     font-weight:500;

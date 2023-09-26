@@ -6,11 +6,11 @@ function barDarken() {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
         document.getElementById("navBar").style.margin = "7px 50px 0 0";
         document.getElementById("navBlock").style.height = "80px";
-        document.getElementById("leftArea").style.margin = "15px 0px 0 25px";
+        document.getElementById("leftArea").style.margin = "17px 0px 0 25px";
       } else {
         document.getElementById("navBar").style.margin = "30px 50px 0 0";
         document.getElementById("navBlock").style.height = "0px";
-        document.getElementById("leftArea").style.margin = "36px 0px 0 25px";
+        document.getElementById("leftArea").style.margin = "38px 0px 0 25px";
       } 
     }
 
