@@ -1,0 +1,135 @@
+body {
+    padding-top:80px;
+}
+
+#contactBoxes {
+    display: inline-block;
+    width:600px;
+}
+
+input, textarea {
+    background-color: #9e56b430;
+    border: 1px solid #624679;
+    color:#dec8e4;
+    border-radius: 7px;
+    padding:10px 15px;
+    font-size:14px;
+    font-family: Satoshi, Arial;
+    font-weight:500;
+    outline:none;
+    width: 100%;
+    resize:vertical;
+    transition:0.3s
+}
+
+#content {
+    margin-bottom:16px;
+    text-align: center;
+}
+
+textarea {
+    transition: none ;
+    transition: box-shadow .3s;
+    height:150px;
+    min-height:60px;
+}
+
+.formBtn {
+    width:auto;
+    margin:20px 10px 0 0;
+    float:left;
+    color:#f3fbff;
+    font-family:'Satoshi', 'Arial';
+    font-size:14px;
+    font-weight:500;
+    border: 1px solid #dbb1ff45;
+    text-decoration:none;
+    padding:8px 16px 8px;
+    border-radius:200px;
+    box-shadow: 0 5px 15px #00001155;
+    background-color:#de89ff30;
+    transition:0.2s;
+    cursor:pointer
+}
+
+.formBtn:hover {
+    border-color:#29e98d;
+    background-color:#29e98d;
+    border: 1px solid #29e98d;
+    color:black;
+}
+
+.formBtn i {
+    font-size:10px;
+    line-height:0;
+    margin:0 0 0 4px;
+    transform:translate(0,0px);
+}
+
+::placeholder {
+    color:#866e8e;
+}
+
+input:focus, textarea:focus {
+    color:white;
+    border-color: #29e98d80;
+    box-shadow: 0 0 30px #29e98d40;
+}
+
+h3 {
+    display: inline-block;
+    text-align: left;
+    width:100%;
+    font-family: Satoshi;
+    color: #fae7ff;
+    font-size:16px;
+    padding: 0;
+    margin:14px 0 8px 0;
+}
+
+span {
+    width:auto;
+    float:left;
+    font-size:18px;
+    margin:23px 0 0 0;
+    padding: 0 15px 0 5px;
+}
+
+p {
+    margin:60px 0 -30px 20px;
+    float:none;
+}
+
+#realign {
+    display:inline-block;
+    margin: -20px 0 20px 0;
+}
+
+#failBox {
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    position:fixed;
+    left:0;
+    bottom:0; 
+    opacity:0;
+    z-index:200;
+    animation:4s fail;
+}
+
+#failBox p {
+    display:inline-block;
+    width:380px;
+    padding:17px;
+    border-radius:200px;
+    background-color: #340e25;
+    border: 2px solid #ff4949;
+    box-shadow: 0 0 50px #ff494950;
+}
+
+@keyframes fail {
+    0% {bottom:0; opacity:0}
+    12% {bottom:50px; opacity:1}
+    98% {bottom:50px; opacity:1}
+    100% {bottom:0; opacity:0}
+}
