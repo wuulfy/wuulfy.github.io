@@ -41,23 +41,16 @@
   <script src="parallax.js"></script>
 </head>
 <body>
-    <div id="topGrad"></div>
-    <div id="navContainer2">
-      <div id="navBlock"></div>
-       <div id="leftArea">
-         <a href="#" class="active" id="logo"><img src="img/logo/logomark.svg" height=30px; alt="wuulfy logo"></a>
-       </div>
-       <div id="navContainer">
-          <div id="navBar">
-              <div id="navContent">
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About</a>
-                <!--<a href="reel.html">Store</a>-->
-                <a href="blog.html">Blog</a>
-                <a id="ACTIVE" href="">Work</a>
-              </div>
-          </div>
-      </div>
+    <div id="navBlock">
+      <div id="navBar">
+        <div id="navContent">
+          <a href="#" id="logo"><img src="img/logo/logomark.svg" alt="wuulfy logo"></a>  
+          <a class="ACTIVE" id="navSide" href="">Work</a>
+          <a href="about.html">About</a> 
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" id="navSide">Contact</a>
+        </div>
+        </div>
     </div>
     <div id="mobileButtonContainer">
       <a id="mobileButton" onclick="mobileOpen()"><i class="fas fa-bars"></i></a>
@@ -66,9 +59,29 @@
     <div id="mobileUI">
       <span onclick="mobileClose()">Tap here to close</span>
       <a id="ACTIVE" href="#">Work</a>
-      <a href="blog.html">Blog</a>
       <a href="about.html">About</a> 
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
+    </div>
+    <div id="videoFixed">
+      <video muted loop autoplay id="topVideo">
+        <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
+      </video>
+    </div>
+    <div id="topOfPage">
+      <div id="topContent" class="leftHeader">
+        <div id="leftContainer">
+          <p id="a7"><a href="about.html">motion designer →</a></p>
+          <h2 id="a1">w</h2><h2 id="a2">u</h2><h2 id="a3">u</h2><h2 id="a4">l</h2><h2 id="a5">f</h2><h2 id="a6">y</h2>
+        </div>
+      </div>
+      <div id="topContent" class="rightHeader" onclick="playReel()">
+        <a href="#" id="videoPlay"><i class="fas fa-play"></i><p>Showreel</p></a>
+      </div>
+    </div>
+    <div id="reelOverlay" onclick="closeReel()"></div>
+    <div id="showreelPlayer">
+      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/154041112?h=03c5def152&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </div>
     <div id="contentBackdrop">
       <div id="content">
@@ -94,7 +107,7 @@
             <span>2023</span>
           </div>
         </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
+        <a id="box" href="#""> <!--THUMBNAIL-->
           <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
             <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
           </video>
@@ -170,13 +183,13 @@
        </div>
       </div>
       <img src="img/wave2.webp" class="waver flip" style="margin-top:-33px;" alt="A wave-shaped separator.">
-      <div id="connect" style="background-color:#010714; background-image:radial-gradient(at center bottom, #421d5c, #100627 60%);">
+      <div id="connect" class="niceGrad">
         <div id="content" style="transform:translate(0, -100px)">
-          <h2>Thank you for taking a look!</h2>
+          <h2>Thank you for taking a look.</h2>
           <p>If you'd like to make something awesome or chat, you can say <a href="mailto:hi@wuulfy.com">hi@wuulfy.com</a>!</p>
           <div id="socialArray">
             <a href="https://www.youtube.com/@wuulfy" id="social"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/wuulfydesign" id="social"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://twitter.com/wuulfydesign" id="social"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/wuulfydesign/" id="social"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/tyler-miller-662ab5290/" id="social"><i class="fab fa-vimeo"></i></a>
             <a href="https://www.behance.net/wuulfy" id="social"><i class="fab fa-behance"></i></a>

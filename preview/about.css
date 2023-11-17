@@ -12,7 +12,7 @@ body {
     align-items: center; 
     justify-content: center;
     text-align:center;
-    z-index: 99;
+    z-index: 30;
 }
 
 #aboutContainer2 {
@@ -39,4 +39,8 @@ body {
     width:calc(40% - 40px);
     margin:-100px 0 0 40px;
     border-radius: 15px;
+}
+
+iframe {
+    margin:20px 0 0 0;
 }
