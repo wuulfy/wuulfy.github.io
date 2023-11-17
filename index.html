@@ -1,220 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 <head>
-  <title>wuulfy ›› Motion Design</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>wuulfy: coming soon</title>
+  <link rel="stylesheet" type="text/css" href="comingSoon.css">
   <link href="/fonts/cabinet-grotesk.css" rel="stylesheet">
-  <link href="/fonts/satoshi.css" rel="stylesheet">
   <link rel="preconnect" href="https://ka-f.fontawesome.com">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://wuulfy.com/img/favicon.ico">
   <link rel="shortcut icon" href="/img/favicon.ico">
   <link rel="canonical" href="https://wuulfy.com">
-  <meta name="msapplication-TileColor" content="#29e98d">
-  <meta name="msapplication-TileColor" content="#29e98d">
-  <meta name="theme-color" content="#29e98d"/>
-  <meta content="#29e98d" name="msapplication-TileColor">
-  <meta content="#29e98d" name="theme-color">
+  <meta name="msapplication-TileColor" content="#00e587">
+  <meta name="msapplication-TileColor" content="#00e587">
+  <meta name="theme-color" content="#00e587"/>
+  <meta content="#00e587" name="msapplication-TileColor">
+  <meta content="#00e587" name="theme-color">
   <meta name="keywords" content="motion,graphics,design,animation,programming,portfolio,ae,technology,html,css,symedia">
-  <meta name="description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
+  <meta name="description" content="Hey, I'm wuulfy! I'm a motion/graphic designer, messing with pretty pixels!">
   <meta property="og:locale" content="en">
   <meta property="og:site_name" content="wuulfy // motion design">
   <meta property="og:url" content="https://wuulfy.com">
   <meta property="og:type" content="website">
   <meta property="og:title" content="wuulfy // motion design">
-  <meta property="og:description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
-  <meta property="og:image" content="https://wuulfy.com/images/metaBanner.webp">
+  <meta property="og:description" content="Hey, I'm wuulfy! I'm a motion/graphic designer, messing with pretty pixels!">
+  <meta property="og:image" content="https://wuulfy.com/img/metaBanner.webp">
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="720">
   <meta itemprop="name" content="wuulfy // motion design">
-  <meta itemprop="description" content="Hey, I'm wuulfy but you can call me Tyler! — I'm a motion, graphics and UI/UX designer and I use my skills to create beautiful projects for a variety of scenarios.">
+  <meta itemprop="description" content="Hey, I'm wuulfy! I'm a motion/graphic designer, messing with pretty pixels!">
   <meta itemprop="image" content="https://wuulfy.com/img/metaBanner.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://wuulfy.com/img/metaBanner.webp">
-  <meta name="twitter:creator" content="@wuulfydesign">
+  <meta name="twitter:creator" content="@0wuulfydesign">
   <meta name="twitter:site" content="https://wuulfy.com">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="minimum-scale=1"/>
   <script src="https://kit.fontawesome.com/3c6f6f5ebb.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="global.js"></script>
-  <script src="parallax.js"></script>
+  <meta name="p:domain_verify" content="4b7be866099d82ba54bd05ba254af603"/>
 </head>
 <body>
-    <div id="navBlock">
-      <div id="navBar">
-        <div id="navContent">
-          <a href="#" id="logo"><img src="img/logo/logomark.svg" alt="wuulfy logo"></a>  
-          <a class="ACTIVE" id="navSide" href="">Work</a>
-          <a href="about.html">About</a> 
-          <a href="blog.html">Blog</a>
-          <a href="contact.html" id="navSide">Contact</a>
-        </div>
-        </div>
+  <div id="lottieContainer">
+    <div id="lottieContainerChild">
+      <lottie-player id="logoAnim" src="img/logoAnimation.json" background="transparent"  speed="1"  style="width:325px; height:160px;" autoplay></lottie-player>
+      <span>coming soon.</span>
     </div>
-    <div id="mobileButtonContainer">
-      <a id="mobileButton" onclick="mobileOpen()"><i class="fas fa-bars"></i></a>
-    </div>
-    <div id="closeRegion" onclick="mobileClose()"></div>
-    <div id="mobileUI">
-      <span onclick="mobileClose()">Tap here to close</span>
-      <a id="ACTIVE" href="#">Work</a>
-      <a href="about.html">About</a> 
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div id="videoFixed">
-      <video muted loop autoplay id="topVideo">
-        <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-      </video>
-    </div>
-    <div id="topOfPage">
-      <div id="topContent" class="leftHeader">
-        <div id="leftContainer">
-          <p id="a7"><a href="about.html">motion designer →</a></p>
-          <h2 id="a1">w</h2><h2 id="a2">u</h2><h2 id="a3">u</h2><h2 id="a4">l</h2><h2 id="a5">f</h2><h2 id="a6">y</h2>
-        </div>
-      </div>
-      <div id="topContent" class="rightHeader" onclick="playReel()">
-        <a href="#" id="videoPlay"><i class="fas fa-play"></i><p>Showreel</p></a>
-      </div>
-    </div>
-    <div id="reelOverlay" onclick="closeReel()"></div>
-    <div id="showreelPlayer">
-      <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/154041112?h=03c5def152&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-    </div>
-    <div id="contentBackdrop">
-      <div id="content">
-       <div id="boxes" class="box3x3">
-        <a id="box" class="banner" href="#">
-          <video muted loop autoplay>
-            <source src="img/portfolio.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="nestBox">
-            <div>
-              <h3>Hi, I'm Tyler Miller</h3>
-              <span>A motion designer from England!</span>
-              <h3 id="showPiece">2023 Showreel</h3>
-            </div>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>The Fall</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#""> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>Animated Loops</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>Switch 2 Concept</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>The Fall</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>Animated Loops</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>Switch 2 Concept</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>The Fall</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>Animated Loops</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a id="box" href="#" style="background-image:url(img/thumbnails/theFall.webp)"> <!--THUMBNAIL-->
-          <video muted loop onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-            <source src="img/thumbnails/vidPreview/theFall.mp4" type="video/ogg"></source>  <!--VIDEO PREVIEW-->
-          </video>
-          <div id="boxContent">
-            <h1>Switch 2 Concept</h1>
-            <span>2023</span>
-          </div>
-        </a>
-        <a href="#" id="btn">View More <i class="fas fa-play"></i></a>
-       </div>
-      </div>
-      <img src="img/wave2.webp" class="waver flip" style="margin-top:-33px;" alt="A wave-shaped separator.">
-      <div id="connect" class="niceGrad">
-        <div id="content" style="transform:translate(0, -100px)">
-          <h2>Thank you for taking a look.</h2>
-          <p>If you'd like to make something awesome or chat, you can say <a href="mailto:hi@wuulfy.com">hi@wuulfy.com</a>!</p>
-          <div id="socialArray">
-            <a href="https://www.youtube.com/@wuulfy" id="social"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/wuulfydesign" id="social"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/wuulfydesign/" id="social"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/tyler-miller-662ab5290/" id="social"><i class="fab fa-vimeo"></i></a>
-            <a href="https://www.behance.net/wuulfy" id="social"><i class="fab fa-behance"></i></a>
-            <a href="https://www.linkedin.com/in/tyler-miller-662ab5290/" id="social"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:hi@wuulfy.com" id="social"><i class="fas fa-envelope"></i></a>
-            <!--<a href="#" id="social"><i class="fab fa-discord"></i></a>-->
-          </div>
-        </div>
-        <img src="img/wave.webp" class="waver" style="margin:-110px 0 -30px 0" alt="A wave-shaped separator.">
-      </div>
-    </div>
-    <footer>
-      <div id="content">
-        <div id="subSection" class="footerSocials">
-          <h2>Other Pages</h2><br>
-          <a href="#">Free Design Assets</a>
-          <!--<a href="#">Join The Community</a>-->
-          <span>© 2023 wuulfy</span>
-        </div>
-        <div id="subSection">
-          <a href="#">Testimonials</a>
-          <a href="#">Brand Guidelines</a>
-          <a href="#">Changelog</a>
-        </div>
-      </div>
-    </footer>
+  </div>
 </body>
 </html>
