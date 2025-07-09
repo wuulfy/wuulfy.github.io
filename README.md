@@ -1,4 +1,2 @@
-# Coming Soon
-State: In development, around 30% finished.
-
-Active development at wuulfy.com/preview
+# wuulfy website
+This mostly relies on Carrd via a redirect. At some point I might make my own site from the ground up.
